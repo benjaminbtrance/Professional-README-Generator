@@ -5,10 +5,33 @@ const generateMarkDown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
+	// Readme project title
 	{
 		type: 'input',
 		message: 'What is the name of your project?',
 		name: 'title',
+		validate: (userInput) => {
+			if (userInput) {
+				return true;
+			} else {
+				console.log('Please enter a title.');
+				return false;
+			}
+		},
+	},
+	// Readme project description
+	{
+		type: 'input',
+		message: 'Enter a description of your project.',
+		name: 'description',
+		validate: (userInput) => {
+			if (userInput) {
+				return true;
+			} else {
+				console.log('Please enter a description.');
+				return false;
+			}
+		},
 	},
 ];
 
