@@ -10,11 +10,11 @@ const questions = [
 		type: 'input',
 		message: 'What is the name of your project?',
 		name: 'title',
-		validate: (userInput) => {
-			if (userInput) {
+		validate: (titleInput) => {
+			if (titleInput) {
 				return true;
 			} else {
-				console.log('Please enter a title.');
+				console.log('Please enter a title to continue.');
 				return false;
 			}
 		},
@@ -24,11 +24,25 @@ const questions = [
 		type: 'input',
 		message: 'Enter a description of your project.',
 		name: 'description',
-		validate: (userInput) => {
-			if (userInput) {
+		validate: (descriptionInput) => {
+			if (descriptionInput) {
 				return true;
 			} else {
-				console.log('Please enter a description.');
+				console.log('Please enter a description to continue.');
+				return false;
+			}
+		},
+	},
+	// Readme install steps
+	{
+		type: 'input',
+		message: 'How to install your project?',
+		name: 'install',
+		validate: (installInput) => {
+			if (installInput) {
+				return true;
+			} else {
+				console.log('Please enter how to install your project to continue.');
 				return false;
 			}
 		},

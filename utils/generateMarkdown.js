@@ -28,7 +28,11 @@ ${data.description}
 - [Test](#Test)
 - [Repository Link](#Repository)
 - [GitHub Info](#GitHub)
- 
+
+## Install
+
+${data.install}
+
 `;
 }
 

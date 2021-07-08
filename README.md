@@ -1,9 +1,9 @@
 
-# ASDSADSA asd asDdsa asdsa
+# Benny
 
 ## Description
 
-asdsadasd sadas dasd asdsaasdsa
+Benny's readme generator
 
 ## Table of contents
 - [Description](#Description)
@@ -14,4 +14,8 @@ asdsadasd sadas dasd asdsaasdsa
 - [Test](#Test)
 - [Repository Link](#Repository)
 - [GitHub Info](#GitHub)
- 
+
+## Install
+
+npm install
+
