@@ -3,7 +3,7 @@
 
 ## Description
 
-Benny's readme generator
+Hello World!
 
 ## Table of contents
 - [Description](#Description)
@@ -15,7 +15,13 @@ Benny's readme generator
 - [Repository Link](#Repository)
 - [GitHub Info](#GitHub)
 
-## Install
+## Installation
 
-npm install
+```
+npm i
+```
+
+## Licence
+
+[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 

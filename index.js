@@ -33,16 +33,31 @@ const questions = [
 			}
 		},
 	},
-	// Readme install steps
+	// Readme installation steps
 	{
 		type: 'input',
-		message: 'How to install your project?',
-		name: 'install',
-		validate: (installInput) => {
-			if (installInput) {
+		message: 'How to install the project?',
+		name: 'installation',
+		validate: (installationlInput) => {
+			if (installationlInput) {
 				return true;
 			} else {
 				console.log('Please enter how to install your project to continue.');
+				return false;
+			}
+		},
+	},
+	// Readme license
+	{
+		type: 'list',
+		message: 'Choose a license for your project',
+		name: 'license',
+		choices: ['Apache', 'Boost', 'MIT', 'BSD', 'None'],
+		validate: (licenseInput) => {
+			if (licenseInput) {
+				return true;
+			} else {
+				console.log('Please enter a license your project to continue.');
 				return false;
 			}
 		},
