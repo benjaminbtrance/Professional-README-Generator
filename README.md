@@ -1,27 +1,43 @@
 
-# Benny
+# Benny Tran
+
+## Table of contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Licence](#licence)
+- [Contributors](#contributors)
+- [Test](#test)
+- [Additional Info](#additional-info)
 
 ## Description
 
 Hello World!
 
-## Table of contents
-- [Description](#Description)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Licence](#Licence)
-- [Contributors](#Contributors)
-- [Test](#Test)
-- [Repository Link](#Repository)
-- [GitHub Info](#GitHub)
-
 ## Installation
 
 ```
-npm i
+npm install
 ```
+
+## Usage
+
+1) Install npm 2) run node index.js
 
 ## Licence
 
-[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+
+## Contributors
+
+Me, Myself, and I
+
+## Test
+
+No test
+
+## Additional Info
+
+- Github: [benjaminbtrance](https://github.com/benjaminbtrance)
+- Email: benjaminb.tran@gmail.com
 

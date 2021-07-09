@@ -76,6 +76,56 @@ const questions = [
 			}
 		},
 	},
+	// Readme contributors
+	{
+		type: 'input',
+		message: 'Who contributed to this project',
+		name: 'contributors',
+		validate: (contributorsInput) => {
+			if (contributorsInput) {
+				return true;
+			} else {
+				console.log(
+					'Please enter who contributed to the project or type none to continue.'
+				);
+				return false;
+			}
+		},
+	},
+	// Readme test instructions
+	{
+		type: 'input',
+		name: 'test',
+		message: 'How to test this project?',
+		validate: (testInput) => {
+			if (testInput) {
+				return true;
+			} else {
+				console.log('Please enter how to test this project to continue.');
+				return false;
+			}
+		},
+	},
+	// Github Username
+	{
+		type: 'input',
+		name: 'github',
+		message: 'Enter your GitHub Username',
+		validate: (githubInput) => {
+			if (githubInput) {
+				return true;
+			} else {
+				console.log('Please enter your GitHub username!');
+				return false;
+			}
+		},
+	},
+	// Email Address
+	{
+		type: 'input',
+		name: 'email',
+		message: 'Would you like to include your email?',
+	},
 ];
 
 // TODO: Create a function to write README file

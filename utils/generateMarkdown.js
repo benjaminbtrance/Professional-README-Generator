@@ -24,14 +24,13 @@ function generateMarkdown(data) {
 # ${data.title}
 
 ## Table of contents
-- [Description](#Description)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Licence](#Licence)
-- [Contributors](#Contributors)
-- [Test](#Test)
-- [Repository Link](#Repository)
-- [GitHub Info](#GitHub)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Licence](#licence)
+- [Contributors](#contributors)
+- [Test](#test)
+- [Additional Info](#additional-info)
 
 ## Description
 
@@ -50,6 +49,19 @@ ${data.usage}
 ## Licence
 
 ${renderLicense(data.license)}
+
+## Contributors
+
+${data.contributors}
+
+## Test
+
+${data.test}
+
+## Additional Info
+
+- Github: [${data.github}](https://github.com/${data.github})
+- Email: ${data.email}
 
 `;
 }
