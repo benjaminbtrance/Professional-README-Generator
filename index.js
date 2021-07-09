@@ -47,12 +47,26 @@ const questions = [
 			}
 		},
 	},
+	// Readme usage
+	{
+		type: 'input',
+		message: 'How to use your project',
+		name: 'usage',
+		validate: (usageInput) => {
+			if (usageInput) {
+				return true;
+			} else {
+				console.log('Please enter how to use the project to continue.');
+				return false;
+			}
+		},
+	},
 	// Readme license
 	{
 		type: 'list',
 		message: 'Choose a license for your project',
 		name: 'license',
-		choices: ['Apache', 'Boost', 'MIT', 'BSD', 'None'],
+		choices: ['Apache', 'Boost', 'MIT', 'Mozilla', 'IBM', 'None'],
 		validate: (licenseInput) => {
 			if (licenseInput) {
 				return true;

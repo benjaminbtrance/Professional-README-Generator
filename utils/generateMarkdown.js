@@ -5,6 +5,14 @@ function renderLicense(license) {
 		return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
 	} else if (license === 'Boost') {
 		return '[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)';
+	} else if (license === 'MIT') {
+		return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+	} else if (license === 'Mozilla') {
+		return '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)';
+	} else if (license === 'IBM') {
+		return '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)';
+	} else if (license === 'None') {
+		return 'None';
 	} else {
 		return '';
 	}
@@ -14,10 +22,6 @@ function renderLicense(license) {
 function generateMarkdown(data) {
 	return `
 # ${data.title}
-
-## Description
-
-${data.description}
 
 ## Table of contents
 - [Description](#Description)
@@ -29,11 +33,19 @@ ${data.description}
 - [Repository Link](#Repository)
 - [GitHub Info](#GitHub)
 
+## Description
+
+${data.description}
+
 ## Installation
 
 ${'```'}
 ${data.installation}
 ${'```'}
+
+## Usage
+
+${data.usage}
 
 ## Licence
 
